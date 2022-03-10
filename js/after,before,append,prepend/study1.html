@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>append() : 콘텐츠를 선택된 요소 내부의 끝부분에 삽입</h3>
+        <h3>prepend() : 콘텐츠를 선택한 요소 내부의 시작 부분에서 삽입</h3>
+        <h3>after() : 선택한 요소 뒤에 콘텐츠 삽입</h3>
+        <h3>before() : 선택한 요소 앞에 콘텐츠 삽입</h3>
+    </div>
+    <div>
+        <div id="container">
+            <span>안녕하세요 저는 이지훈입니다.</span>
+        </div>
+    </div>
+    <script>
+        const container = document.querySelector("#container");
+        const strong = document.createElement("strong");
+        const Dev = document.createElement("Dev");
+
+        strong.textContent = "strong";
+        Dev.textContent = "개발자가 될 사나이";
+
+        container.prepend(strong);
+        container.append(Dev);
+        container.after("에프터");
+        container.before("비포");
+    </script>
+</body>
+</html>
