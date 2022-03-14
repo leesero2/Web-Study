@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">텍스트
+        <div class="child1"></div>
+        <!--주석(Comment)-->
+        <p class="child2"></p>
+        <span class="child3"></span>
+     </div>
+     
+     <script>
+         const ele = document.querySelector(".parent");
+         console.log(ele.children); 
+         //ele.children은 해당 HTML 요소의 자식요소를 배열의 형태로 반환한다. childNodes와는 다르게 주석이나 줄바꿈 또는 텍스트는 제외
+     </script>
+</body>
+</html>
