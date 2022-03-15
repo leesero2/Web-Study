@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const name = "jihoon"; //문자형 String
+        const age = 25;
+
+        const name1 = "jihoon"; // "" 큰따옴표를 사용해도되고
+        const name2 = 'jihoon'; // '' 작은따옴표를 사용해도됨.
+        const name3 = `jihoon`; // ``를 사용해도됨
+        
+        //그럼 언제 이것을 구분을 하느냐
+
+        const message = "I'm a boy"; //문장안에서 작은 따옴표를 사용할때가 있기에 큰따옴표를 사용하면 편함
+        const message2  = 'I\'m a boy'; //작은따옴표로 문자형을 선언하고싶으면 \ 역슬레시를 이용하면 표현 가능
+
+        const message3 = `my name is ${name}`; //``는 함수 를 안에 넣을 수 있음.
+
+        console.log(message3);
+        //message의 값이 콘솔로 출력됨.
+
+        const message4 = `나는 ${24+1}살 입니다.`; //이렇게 표현식도 가능
+        //나는 25살 입니다. 콘솔로고가 뜸
+    </script>
+</body>
+</html>
