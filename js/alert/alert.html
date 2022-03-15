@@ -8,11 +8,16 @@
 </head>
 <body>
     <script>
-        name = "Mike";
-        age = 30;
+        // name = "Mike";
+        // age = 30;
 
-        alert(name);
+        // alert(name);
         //변수 name에 저장된 mike가 경고창으로 뜸
+
+        const name = prompt("이름을 입력하세요."); //입력하는 창이 뜸
+        alert(`안녕하세요, ${name}님. 환영합니다. `); //입력한 값을 name의 변수에 저장후 출력
+
+        const date = prompt("예약일을 입력해주세요.", "2022-3-"); //default값을 지정 가능
     </script>
     
 </body>
