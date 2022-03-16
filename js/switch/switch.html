@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruit = prompt("무슨 과일을 사고싶나요?");
+        
+        switch(fruit){
+            case '사과' :
+                console.log('100원입니다.');
+                break;
+            case '바나나' :
+                console.log('200원입니다.');
+                break;
+            case '키위' :
+                console.log('300원입니다.');
+                break;
+            //case조건에 없는경우 default를사용
+            default :
+            console.log("그런 과일은 없습니다");
+            break;
+        }
+    </script>
+</body>
+</html>
