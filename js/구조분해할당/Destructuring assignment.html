@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //배열 구조분해
+        let users = ['mike','tom','jane'];
+        let [user1, user2, user3] = users;
+        //위 소스가 
+        //let user1 = users[0];
+        //let user2 = users[1];
+        //let user3 = users[2]; 랑 같음
+
+        //출력 결과
+        console.log(user1); //'mike'
+        console.log(user2); //'tom'
+        console.log(user3); //'jane'
+
+        //-----------------------------------------
+
+        let str = "mike-tom-jane";
+        let[user4,user5,user6] = str.split('-');
+        //split 메소드는 지정한것을 나눠주는 역할을 함
+
+        console.log(user4); //'mike'
+        console.log(user5); //'tom'
+        console.log(user6); //'jane'
+
+        //-----------------------------------------
+        //만약 해당하는 부분이 없다면?
+
+        
+
+    </script>
+
+</body>
+</html>
+
+<!-- Destructuring assignment
+구조 분해 할당 구문은 배열이나 객체의 속성을 분해해서 그 값을 변수에 담을 수 있게 하는 표현식 -->
