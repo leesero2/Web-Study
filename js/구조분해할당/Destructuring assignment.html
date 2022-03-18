@@ -60,6 +60,35 @@
         //편하게 구조 바꿔치기
         [a1,b1] = [b1,a1]; //위보다 훨씬 간단함
 
+        //---------------------------------------------------------------------------------------------------------------------------
+        //객체 구조분해
+        let user = { name: 'mike', age: 30 };
+
+        let {name,age} = user; //이코드는
+        //let name = user.name;
+        //let age = user.age; 와 같음 
+        //순서가 바뀌어도 상관없음 ex) let {age,name} = user; 해도 동일함
+
+        console.log(name); //'mike'
+        console.log(age); //30
+
+        //-----------------------------------------
+        //변수 이름 바꾸는것도 가능
+        let user11 = { name: 'mike', age: 30 };
+        //let { name, age} = user11; 가 아닌
+        let { name: userName, age: userAge } = user11; //으로도 됨
+        console.log(userName); //'mike'
+        console.log(userAge); //30
+
+        //-----------------------------------------
+        //배열과 마찬가지로 기본값을 줄 수 있음
+
+        let user22 = { name: 'mike', age: 30 };
+        //let {name22, age22, gender22} = user22; 여기서 gender22는 undefined 값을 가짐, 할당한게 없어서
+        let {name22, age22, gender22 = 'male'} = user22; //직접 gender22에 값을 할당하면
+
+        console.log(gender22); //'male'
+
 
     </script>
 
