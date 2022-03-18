@@ -39,7 +39,14 @@
 
         console.log(d); //1
         console.log(e); //2
+        console.log(f); //5
+        //--------------------------------------------
+        //일부 반환값 무시
+        let [user7, ,user8] = ['mike','tom','jane','tony'];
 
+        console.log(user7) // 'mike'
+        console.log(user8) // 'jane'
+        //tom은 빈값으로 값이 넘어갔기 때문에 바로 jane을 할당함
 
     </script>
 
