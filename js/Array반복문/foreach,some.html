@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //forEach() 메서드
+        var arr = ["abc", "def", "ghi"];
+ 
+        // 사용방법
+        // Array.forEach(callback function (value, index, array) {
+        // });
+  
+        // 예제
+        arr.forEach(function (value, index, array) {
+            console.log(value) 
+            console.log(index)
+            console.log(array)
+        });
+
+        //some()메서드
+        // Array.some(callback function (value, index, array) {
+        // });
+ 
+        // 예제
+        arr.some(function (value, index, array) {
+            console.log(value);
+            console.log(index);
+            console.log(array);
+
+            // 동일한 값이 있으면 종료
+        if (value === "def") {
+        return true;
+        };
+
+        });
+        console.log(result);
+
+        //some() 메서드를 사용하는 이유를 확연히 보여준다. 특정 Array 에 내가 원하는 값이 있는지 없는지를 확인할 수 있다.
+        //그뿐만 아니라, return true 구문이 등장하면 some() 메서드는 종료하게 된다. 즉, break 문과 동일하다.
+
+        //결론
+        //-사용용도에 맞게 사용하면 된다.
+
+        // Array 전체를 반복해야 한다면, $.each()/Array.forEach() 메서드를
+
+        // Array 특정 아이템을 찾고 싶다면, Array.some() 메서드를 사용하여 코드량을 줄이자!
+    </script>
+</body>
+</html>
